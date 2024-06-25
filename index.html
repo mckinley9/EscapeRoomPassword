@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Protected Content</title>
+    <title>Fake Email Interface</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div id="password-section">
-            <h2>Enter Password</h2>
-            <input type="password" id="password" placeholder="Password">
-            <button onclick="checkPassword()">Submit</button>
+    <div class="email-container">
+        <div id="email-draft-section">
+            <h2>Compose Email</h2>
+            <div class="email-field">
+                <label for="to">To:</label>
+                <input type="text" id="to" value="recipient@example.com" disabled>
+            </div>
+            <div class="email-field">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" value="Password Recovery" disabled>
+            </div>
+            <div class="email-field">
+                <label for="body">Body:</label>
+                <textarea id="body" placeholder="Type the password you found here..."></textarea>
+            </div>
+            <button onclick="checkPassword()">Send</button>
         </div>
         <div id="protected-content" style="display: none;">
             <h2>Protected Content</h2>
