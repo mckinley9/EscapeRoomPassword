@@ -12,15 +12,15 @@
             <h2>Compose Email</h2>
             <div class="email-field">
                 <label for="to">To:</label>
-                <input type="text" id="to" value="uchicagoIT@uchicago.edu" disabled>
+                <input type="text" id="to" value="recipient@example.com" disabled>
             </div>
             <div class="email-field">
                 <label for="subject">Subject:</label>
-                <input type="text" id="subject" value="Clue Discovery" disabled>
+                <input type="text" id="subject" value="Password Recovery" disabled>
             </div>
             <div class="email-field">
                 <label for="body">Body:</label>
-                <textarea id="body" placeholder="Type the clue you found here."></textarea>
+                <textarea id="body" placeholder="Type the password you found here..."></textarea>
             </div>
             <button onclick="checkPassword()">Send</button>
         </div>
@@ -28,6 +28,7 @@
             <h2>Protected Content</h2>
             <p>This content is protected by a password.</p>
         </div>
+        <div id="error"><p>Incorrect</p></div>
     </div>
     <script src="script.js"></script>
 </body>

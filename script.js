@@ -6,6 +6,6 @@ function checkPassword() {
         document.getElementById('email-draft-section').style.display = 'none';
         document.getElementById('protected-content').style.display = 'block';
     } else {
-        alert('Incorrect password. Please try again.');
+        alert('Incorrect. Please try again.');
     }
 }
